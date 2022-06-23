@@ -5,7 +5,7 @@ class Solver
 
     sum = 0
     num_array = *(1..number)
-    num_array.each { |number| sum += number }
+    num_array.each { |number_two| sum += number_two }
     sum
   end
 
@@ -23,6 +23,5 @@ class Solver
     else
       num.to_s
     end
-
   end
 end
