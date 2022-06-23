@@ -42,5 +42,14 @@ RSpec.describe Solver do
       expect(solver.reverse('tafara')).to eql('arafat')
     end
 
+    it 'Checks that the fizzbuzz method can receive a value' do
+      mock = double('solver')
+      allow(mock).to receive(:fizzbuzz).with (8)
+
+      solver = Solver.new()
+      solver.reverse(10)
+    end
+
+
   end
 end
