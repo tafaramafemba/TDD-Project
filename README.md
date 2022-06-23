@@ -1,7 +1,6 @@
 # TDD-Project
  
-> This is a command line interface to record what books are in the library of a university and who borrows them. This project uses Object Oriented Programming and is built using Ruby.
-
+> This is a TDD project assigned by Microverse that has 3 methods. One of the methods returns the factorial of a given number, the other one returns a reversed string and the last one is a fizzbuzz.
 ## Built With
 
 - Ruby
@@ -13,7 +12,7 @@ To get a local copy of the project, follow these steps:
 1. Open the terminal and navigate to the folder where you would like to put these files.
 2. Type the following commands into the terminal: 
  ```
- git clone https://github.com/tafaramafemba/OOP-School-Library
+ git clone https://github.com/tafaramafemba/TDD-Project
  ```
 
 ## Author
