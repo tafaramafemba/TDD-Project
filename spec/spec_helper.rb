@@ -1,2 +1,2 @@
 require 'yaml'
-require '../solver'
+require_relative '../solver'
