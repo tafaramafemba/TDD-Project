@@ -29,5 +29,13 @@ RSpec.describe Solver do
       expect(solver.factorial(2)).to eql 3
     end
 
+    it 'Checks that the reverse method can receive a value' do
+      mock = double('solver')
+      allow(mock).to receive(:reverse).with ('hello')
+
+      solver = Solver.new()
+      solver.reverse('Tafara')
+    end
+
   end
 end
