@@ -1,12 +1,9 @@
 class Solver
   def factorial(number)
     return 'invalid number' if number.negative?
-    return 1 if number.zero?
+    return 1 if number.zero? || number == 1
 
-    sum = 0
-    num_array = *(1..number)
-    num_array.each { |number_two| sum += number_two }
-    sum
+    number * factorial(number - 1)
   end
 
   def reverse(word)
