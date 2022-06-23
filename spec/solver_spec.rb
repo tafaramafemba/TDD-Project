@@ -37,5 +37,10 @@ RSpec.describe Solver do
       solver.reverse('Tafara')
     end
 
+    it "Checks that the reverse method returns a reversed string" do
+      solver = Solver.new()
+      expect(solver.reverse('tafara')).to eql('arafat')
+    end
+
   end
 end
