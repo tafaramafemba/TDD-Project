@@ -54,20 +54,24 @@ RSpec.describe Solver do
       solver.fizzbuzz(10)
     end
 
-    describe 'Solver::fizzbuzz' do
       it 'returns "Fizz" for multiples of 3' do
-        expect(Solver.fizzbuzz(3)).to eq('Fizz')
+        solver = Solver.new()
+        expect(solver.fizzbuzz(3)).to eq('Fizz')
       end
     
       it 'returns "Buzz" for multiples of 5' do
-        expect(Solver.fizzbuzz(5)).to eq('Buzz')
+        solver = Solver.new()
+        expect(solver.fizzbuzz(5)).to eq('Buzz')
       end
     
       it 'returns "FizzBuzz" for multiples of 3 and 5' do
-        expect(Solver.fizzbuzz(15)).to eq('FizzBuzz')
+        solver = Solver.new()
+        expect(solver.fizzbuzz(15)).to eq('FizzBuzz')
       end
     
       it 'returns the number coherced to string for non-multiples of 3 or 5' do
-        expect(Solver.fizzbuzz(1)).to eq('1')
-  end
+        solver = Solver.new()
+        expect(solver.fizzbuzz(1)).to eq('1')
+     end
+ end
 end
