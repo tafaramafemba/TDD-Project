@@ -28,7 +28,9 @@ RSpec.describe Solver do
       solver = Solver.new()
       expect(solver.factorial(2)).to eql 3
     end
+  end
 
+  context 'Testing reverse method' do
     it 'Checks that the reverse method can receive a value' do
       mock = double('solver')
       allow(mock).to receive(:reverse).with ('hello')
@@ -41,7 +43,9 @@ RSpec.describe Solver do
       solver = Solver.new()
       expect(solver.reverse('tafara')).to eql('arafat')
     end
+  end
 
+  context 'Testing the fizzbuzz method' do
     it 'Checks that the fizzbuzz method can receive a value' do
       mock = double('solver')
       allow(mock).to receive(:fizzbuzz).with (8)
@@ -50,6 +54,20 @@ RSpec.describe Solver do
       solver.fizzbuzz(10)
     end
 
-
+    describe 'Solver::fizzbuzz' do
+      it 'returns "Fizz" for multiples of 3' do
+        expect(Solver.fizzbuzz(3)).to eq('Fizz')
+      end
+    
+      it 'returns "Buzz" for multiples of 5' do
+        expect(Solver.fizzbuzz(5)).to eq('Buzz')
+      end
+    
+      it 'returns "FizzBuzz" for multiples of 3 and 5' do
+        expect(Solver.fizzbuzz(15)).to eq('FizzBuzz')
+      end
+    
+      it 'returns the number coherced to string for non-multiples of 3 or 5' do
+        expect(Solver.fizzbuzz(1)).to eq('1')
   end
 end
