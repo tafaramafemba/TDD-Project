@@ -47,7 +47,7 @@ RSpec.describe Solver do
       allow(mock).to receive(:fizzbuzz).with (8)
 
       solver = Solver.new()
-      solver.reverse(10)
+      solver.fizzbuzz(10)
     end
 
 
